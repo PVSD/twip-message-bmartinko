@@ -34,6 +34,9 @@ public class Main {
                     Scanner remover = new Scanner(System.in);
                     String removedText = remover.nextLine();
                     start.remove(removedText);
+                }else if (messageSend.equalsIgnoreCase("clear")){
+                    System.out.println("The log is now clear!");
+                    start.clearList();
                 }
                 else {
                     start.add(new message(name, messageSend));

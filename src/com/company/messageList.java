@@ -30,5 +30,8 @@ public class messageList {
             System.out.println(log.get(h).getPerson() + ": " + log.get(h).getSentMessage()
                     + ". This message was sent at " + log.get(h).getTimeRecieved());
         }
+
+    } public void clearList(){
+        log.clear();
     }
 }
